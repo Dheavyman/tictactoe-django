@@ -5,6 +5,9 @@ from .models import Game, Move
 
 @admin.register(Game)
 class GameAdmin(admin.ModelAdmin):
+    """
+    Admin page display configurations
+    """
     list_display = ('id', 'first_player', 'second_player', 'status')
     list_editable = ('status',)
 
