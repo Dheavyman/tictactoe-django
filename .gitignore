@@ -2,3 +2,5 @@
 .vscode/
 **/__pycache__
 /tictactoe/*.sqlite3
+.DS_Store
+venv/
