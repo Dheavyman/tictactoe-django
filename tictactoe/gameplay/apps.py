@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class GameplayConfig(AppConfig):
+class GamePlayConfig(AppConfig):
     """
     Game configuration
     """

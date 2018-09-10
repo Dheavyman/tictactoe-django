@@ -31,14 +31,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'gameplay.apps.GameplayConfig',
-    'player.apps.PlayerConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'gameplay.apps.GamePlayConfig',
+    'player.apps.PlayerConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +123,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+
+# Login/Logout
+
+LOGIN_REDIRECT_URL = 'player_home'
+
+LOGOUT_REDIRECT_URL = 'tictactoe_welcome'
+
+LOGIN_URL = 'player_login'
+
+
+# Custom form with crispy
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def welcome(request):
@@ -7,4 +7,7 @@ def welcome(request):
     :param request: request context
     :return: render welcome page
     """
-    return render(request, 'tictactoe/welcome.html')
+    if request.user.is_authenticated:
+        return redirect('player_home')
+    else:
+        return render(request, 'tictactoe/welcome.html')
