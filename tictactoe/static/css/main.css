@@ -1,22 +1,22 @@
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+ul.games {
+    list-style-type: none;
+}
 
+.tictactoe-table {
+    width: 300px;
+    border-width: 2px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tictactoe-cell {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle !important;
+    font-size: 60px;
+}
